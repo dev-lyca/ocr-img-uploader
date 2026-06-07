@@ -1,31 +1,28 @@
-# Next.js & HeroUI Template
+# LENSTEXT — OCR Image Uploader
 
-This is a template for creating applications using Next.js 16 (app directory) and HeroUI (v3).
+A minimal OCR web app for extracting text from images and PDFs. Built with Next.js and HeroUI. 
+Currently deployed as a **UI-only prototype**.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+## Tech Stack
 
-## Technologies Used
-
-- [Next.js 16](https://nextjs.org/docs/getting-started)
+- [Next.js](https://nextjs.org/docs/getting-started) (App Directory)
 - [HeroUI v3](https://heroui.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
 
-## How to Use
+## Features
 
-### Use the template with create-next-app
+- Drag & drop or click-to-browse image/PDF upload
+- Extracted text preview panel
+- Search across extracted results
+- Export as `.txt` or `.pdf`
+- Dark-themed UI with responsive layout
 
-To create a new project based on this template using `create-next-app`, run the following command:
+> **Note:** This is currently a UI-only deployment. OCR processing and backend integration are not yet active. It's still on going.
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+## Getting Started
 
 ### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 
 ```bash
 npm install
@@ -36,6 +33,8 @@ npm install
 ```bash
 npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## License
 
