@@ -11,15 +11,54 @@ export const Logo: React.FC<IconSvgProps> = ({
   <svg
     fill="none"
     height={size || height}
-    viewBox="0 0 32 32"
+    viewBox="0 0 56 56"
     width={size || width}
     {...props}
   >
-    <path
-      clipRule="evenodd"
-      d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-      fill="currentColor"
-      fillRule="evenodd"
+    {/* outer lens ring */}
+    <circle cx="28" cy="28" r="24" stroke="#00cc44" strokeWidth="2.2" />
+    {/* inner dashed ring */}
+    <circle
+      cx="28"
+      cy="28"
+      r="13"
+      stroke="#00cc44"
+      strokeWidth="1.2"
+      strokeDasharray="4 3"
+    />
+    {/* crosshair horizontal */}
+    <line
+      x1="2"
+      y1="28"
+      x2="54"
+      y2="28"
+      stroke="#00cc44"
+      strokeWidth="1"
+      strokeDasharray="5 4"
+      opacity="0.35"
+    />
+    {/* crosshair vertical */}
+    <line
+      x1="28"
+      y1="2"
+      x2="28"
+      y2="54"
+      stroke="#00cc44"
+      strokeWidth="1"
+      strokeDasharray="5 4"
+      opacity="0.35"
+    />
+    {/* center dot */}
+    <circle cx="28" cy="28" r="4" fill="#00cc44" />
+    {/* handle */}
+    <line
+      x1="45"
+      y1="45"
+      x2="58"
+      y2="58"
+      stroke="#00cc44"
+      strokeWidth="3.5"
+      strokeLinecap="round"
     />
   </svg>
 );

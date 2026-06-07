@@ -5,7 +5,7 @@ import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
 
 import { Navbar } from "@/components/navbar";
-import { fontSans } from "@/config/fonts";
+import { dmMono } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen text-foreground bg-background font-sans antialiased",
-          fontSans.variable,
+          dmMono.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
