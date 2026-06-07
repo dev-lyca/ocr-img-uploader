@@ -1,11 +1,14 @@
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { Details } from "@/components/details";
+import { Upload } from "@/components/upload";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-     Hello, dev.el
+    <section>
+      <div className="flex flex-col lg:flex-row">
+        <Upload />
+        <div className="lg:w-px lg:self-stretch lg:mx-4 w-full h-px bg-zinc-800 my-4 lg:my-0" />
+        <Details />
+      </div>
     </section>
   );
 }

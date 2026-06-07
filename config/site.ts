@@ -6,37 +6,33 @@ export const siteConfig = {
     "A decentralized text storage and sharing platform built on Lens Protocol.",
   navItems: [
     {
-      label: "Upload",
+      label: "upload",
       href: "/",
     },
     {
-      label: "History",
-      href: "/docs",
+      label: "history",
+      href: "/history",
     },
     {
-      label: "Search",
-      href: "/pricing",
+      label: "search",
+      href: "/earch",
     },
   ],
   navMenuItems: [
     {
-      label: "Upload",
+      label: "upload",
       href: "/",
     },
     {
-      label: "History",
-      href: "/docs",
+      label: "history",
+      href: "/history",
     },
     {
-      label: "Search",
-      href: "/pricing",
+      label: "search",
+      href: "/earch",
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/dev-lyca/ocr-img-uploader",
   },
 };
